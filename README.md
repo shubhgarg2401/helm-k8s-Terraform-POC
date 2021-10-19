@@ -186,3 +186,27 @@ Go to your browser and navigate to http://<dns-address>:8080 Note: This may take
 Log in with the credentials you set in the jenkins-values.yaml or the helm_release.tf
 
 
+#### For our halm_release.tf file
+
+our provider is helm, and in that we have our k8s configured.
+There are various ways of authentication,
+https://registry.terraform.io/modules/terraform-module/release/helm/latest?tab=inputs
+
+For our implementation , we used an exec plugin where we get an authentication token.
+
+for the "host"
+the host in eks-cluster.tf needs to match the host in helm provider.
+
+For the "resource"
+each helm chart is an new resource ,
+the name is helm repo name,repo is the repository we are getting the resource from.
+eg. `helm repo add jenkins < url of the repo> `
+and then 
+`helm search repo jenkins`
+
+to search the repo you just added.
+
+Valid arguments are really necessary .
+
+for values, we have defined a clear path ( not mandatory)
+and the secrets are set sensitive too.
