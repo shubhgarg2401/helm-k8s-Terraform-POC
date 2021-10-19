@@ -142,7 +142,7 @@ This will create a new release as seen below.
 
     $ helm ls
     NAME          REVISION  UPDATED                   STATUS    CHART               NAMESPACE
-    k8s-helm-poc  2         Sun OCT 18 23:30:57 2018  DEPLOYED  k8s-helm-poc-0.0.1  default
+    k8s-helm-poc  2         Sun OCT 18 23:30:57 2021  DEPLOYED  k8s-helm-poc-0.0.1  default
 	
 Kubectl will confirm increase of replicas.
 
