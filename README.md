@@ -186,7 +186,7 @@ Go to your browser and navigate to http://<dns-address>:8080 Note: This may take
 Log in with the credentials you set in the jenkins-values.yaml or the helm_release.tf
 
 
-#### For our halm_release.tf file
+#### For our helm_release.tf file
 
 our provider is helm, and in that we have our k8s configured.
 There are various ways of authentication,
