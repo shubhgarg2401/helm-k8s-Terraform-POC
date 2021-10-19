@@ -160,13 +160,13 @@ To install on different namespace:
 
 
 ## USING HELM CHART WITH TERRAFORM ON AWS EKS
-####Pre-requisites
+#### Pre-requisites
 - Terraform installed
 - AWS cli installed on a host to connect to the cluster
 - AWS credentials configured
 - kubectl installed on a host to deploy to the cluster
 
-####Deployment Instructions
+#### Deployment Instructions
 - Install Terraform
 - Clone this repository
 - Edit the jenkins-values.yaml to match your values
