@@ -160,13 +160,13 @@ To install on different namespace:
 
 
 ## USING HELM CHART WITH TERRAFORM ON AWS EKS
-#### Pre-requisites
+####Pre-requisites
 - Terraform installed
 - AWS cli installed on a host to connect to the cluster
 - AWS credentials configured
 - kubectl installed on a host to deploy to the cluster
 
-#### Deployment Instructions
+####Deployment Instructions
 - Install Terraform
 - Clone this repository
 - Edit the jenkins-values.yaml to match your values
@@ -210,3 +210,19 @@ Valid arguments are really necessary .
 
 for values, we have defined a clear path ( not mandatory)
 and the secrets are set sensitive too.
+
+## BENIFITS OF USING HELM CHARTS
+
+### First: Deployment Speed
+
+### Second: Helm chart on Kubernetes for application configuration
+
+significant benefit of deploying infrastructure using Helm is the use of prebuilt configurations. You are no longer building your configuration from scratch and diving into docs to get a sample application running — most Helm chart values.yaml files will not only be created with starting users' best interest but will also typically include commented out features that you may be interested in as an advanced user. With that being said, I do caution that you truly understand a service and have read up on its documentation if you intend to roll it into a production environment.
+
+### Third: Application testing
+
+Engineers have spent hours building out these great Helm charts, and we can reap what they have sown. Like any engineer, they expect failure and design with that in mind. In many Helm chart repo’s you will find the beautiful addition of tests. These tests can range from proper load testing in your deployment to simple tests for your configuration and making sure your services are running properly.
+
+#### SOME BEST PRACTICES FOR USING HELM CHARTS
+
+https://codersociety.com/blog/articles/helm-best-practices
